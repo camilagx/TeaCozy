@@ -1,6 +1,7 @@
 /** FONT **/
 html {
   font-family:Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 /**** NAV ****/
@@ -29,12 +30,23 @@ nav {
 
 .banner {
   background-image: url("media/img-mission-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.banner div {
+  background-color: rgba(0,0,0,0.97);
+  align-items: center;
+ }
+
+ .banner div * {
+  text-align: center;
+ }
 /** LINKS **/
 a {
   text-decoration: none;
   color: black;
-  
 }
  
 /** Toggle Styles **/ 
@@ -103,5 +115,9 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+ }
+
+ .banner div * {
+    margin: 0.8rem;
  }
 }
