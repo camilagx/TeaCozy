@@ -1,0 +1,24 @@
+/**** NAV ****/
+nav {
+  background-color: black;
+  height: 69px;
+}
+
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    list-style-type: none;
+  }
+
+  nav .logo {
+    height: 50px;
+    max-width: 300px;
+  } 
+ 
+@media screen and (max-width: 480px) {
+  /**NAV **/
+  nav .logo {
+    
+  }
+}
