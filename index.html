@@ -5,15 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="text/javascript" defer></script>
   <title>Tea cozy</title>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="desktop-nav">
+      <a href="#mission">
+        <img src="media/img-tea-cozy-logo.png" alt="tea cozy logo" class="logo"> 
+      </a>
       <ul>
-        <li><a href="#mission">
-          <img src="media/img-tea-cozy-logo.png" alt="tea cozy logo" class="logo"> 
-        </a></li>
         <li><a href="#mission">
           Mission
         </a></li>
@@ -25,6 +26,23 @@
         </a></li>
       </ul>
     </nav>
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
+    <nav class="mobile-nav display">
+      <ul>
+        <li><a href="#mission">
+          Mission
+        </a></li>
+        <li><a href="#teas">
+          Featured Tea
+        </a></li>
+        <li><a href="#locations-section">
+          Locations
+        </a></li>
+      </ul>
+    </nav>
+    
     <section class="banner">
       <h2 id="mission" class="title">Our Mission</h2>
       <h4>
