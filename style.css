@@ -4,17 +4,21 @@ nav {
   height: 69px;
 }
 
-nav ul li {
-  list-style-type: none;
-}
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    list-style-type: none;
+  }
 
-.logo {
-  display: block;
-  height: 50px;
-  max-width: 300px;
-}
-
-
+  nav .logo {
+    height: 50px;
+    max-width: 300px;
+  } 
+ 
 @media screen and (max-width: 480px) {
-
+  /**NAV **/
+  nav .logo {
+    
+  }
 }
