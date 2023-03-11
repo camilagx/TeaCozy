@@ -24,6 +24,12 @@ nav {
     display: hidden;
   }
 
+
+  /** BANNER **/ 
+
+.banner {
+  background-image: url("media/img-mission-background.jpg");
+}
 /** LINKS **/
 a {
   text-decoration: none;
@@ -90,5 +96,12 @@ a {
   padding: 10px 0;
   margin: 10px;
  }
- 
+ /** BANNER **/
+ .banner {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
 }
