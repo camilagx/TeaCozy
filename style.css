@@ -121,9 +121,13 @@ a {
   }
 
   .mobile-nav li {
-  background-color: aliceblue;
+  background-color: rgba(85, 85, 85, 0.3);
   padding: 10px 0;
   margin: 10px;
+  }
+
+  .mobile-nav li a {
+    color: white;
   }
   /** BANNER **/
   .banner {
