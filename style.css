@@ -55,6 +55,10 @@ nav {
   display: flex;
  }
 
+ figcaption {
+  text-align: center;
+  padding: 0.5rem;
+ }
 
 
 /** LINKS **/
@@ -142,10 +146,15 @@ a {
 
   figure {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0.4rem 0;
   }
 
   figure img {
     width: 100vw;
   }
+
+  figcaption {
+    padding-top: 0.4rem;
+  }
+
 }
