@@ -5,3 +5,6 @@ hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('display');
 });
 
+mobileNav.addEventListener('click', () => {
+  mobileNav.classList.toggle('display');
+}); 
