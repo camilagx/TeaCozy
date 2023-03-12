@@ -2,9 +2,8 @@
 html {
   background-color: black;
   color: white;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 body {
   margin: 0;
 }
@@ -13,18 +12,40 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: 'Merriweather', serif;
   text-align: center;
 }
 
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+p {
+  text-align: center;
+}
 /**** NAV ****/
 nav {
   height: 69px;
   display: flex;
+  background-color: #171a1d;
 }
-  
-  nav ul li {
-    list-style-type: none;
-  }
 
   nav .logo {
     height: 50px;
@@ -60,6 +81,26 @@ nav {
   padding: 0.5rem;
  }
 
+ /**LOCATION SECTION **/
+ #locations-section li {
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+ }
+
+ /** FOOTER **/ 
+ footer {
+  background-color: #171a1d;
+  height: 20vh;
+  padding: 0.1rem;
+ }
+ footer h1 {
+  margin-bottom: 0.5rem;
+ }
+
+ footer p {
+  margin-top: 0;
+ }
 
 /** LINKS **/
 a {
@@ -107,8 +148,12 @@ a {
   margin-top: 5px;
   }
 
+  .hamburger {
+    margin-top: 0;
+  }
+
   .mobile-nav {
-  background-color: black;
+  background-color: #171a1d;
   padding: 2.5rem;
   height: 100vh;
   top: 10%;
@@ -116,12 +161,11 @@ a {
   .mobile-nav ul {
   margin: 0 auto;
   text-align: center;
-  padding-left: 0;
   width: 65%;
   }
 
   .mobile-nav li {
-  background-color: rgba(85, 85, 85, 0.3);
+  background-color: rgba(53, 53, 53, 0.4);
   padding: 10px 0;
   margin: 10px;
   }
@@ -142,7 +186,7 @@ a {
     margin: 0.8rem;
   }
 
-  /** TEA **/
+  /** TEA SECTION **/
   .tea-gallery{
   flex-direction: column;
   width: 100vw;
@@ -161,4 +205,9 @@ a {
     padding-top: 0.4rem;
   }
 
+ 
+
+  .location {
+    background-color: rgba(189, 184, 179, 0.815);
+  }
 }
