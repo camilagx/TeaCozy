@@ -41,17 +41,22 @@ p {
   text-align: center;
 }
 /**** NAV ****/
-nav {
-  height: 69px;
+.desktop-nav {
+  height: 70px;
   display: flex;
   background-color: #171a1d;
+  align-items: flex-start;
 }
 
-  nav .logo {
-    height: 50px;
-    max-width: 300px;
-    display: block;
-  } 
+.desktop-nav ul {
+  height: 100%;
+}
+
+#logo {
+  display: block;
+  height: 50px
+}
+
 
   .hamburger {
     display: hidden;
@@ -119,14 +124,14 @@ a {
 
 @media screen and (max-width: 480px) {
   /**NAV **/
-  .desktop-nav ul {
+  .desktop {
     display: none;
   }
 
   .hamburger {
   display:unset;
   position: absolute;
-  top: 2%;
+  top: 1.7%;
   right: 2%;
   background-color: transparent;
   border: none;
