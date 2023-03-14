@@ -8,10 +8,6 @@ html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body {
-  margin: 0;
-}
-
 h1,
 h2,
 h3,
@@ -31,14 +27,6 @@ h3 {
 h4 {
   font-size: 1.1rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-ul {
-  padding-left: 0;
-}
-
-ul li {
-  list-style-type: none;
 }
 
 p {
