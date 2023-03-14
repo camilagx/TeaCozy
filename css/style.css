@@ -1,6 +1,7 @@
 /** TYPOGRAPHY **/
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 html {
   background-color: black;
@@ -59,7 +60,7 @@ nav {
   /** BANNER **/ 
 
 .banner {
-  background-image: url("media/img-mission-background.jpg");
+  background-image: url("../media/img-mission-background.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,11 +122,11 @@ a {
   left: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 769px) {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   /**NAV **/
   .desktop {
     display: none;
