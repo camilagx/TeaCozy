@@ -106,6 +106,9 @@ nav {
  /** FOOTER **/ 
  footer {
   background-color: #171a1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 20vh;
   padding: 0.1rem;
  }
