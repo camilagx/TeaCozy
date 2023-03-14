@@ -54,7 +54,7 @@ nav {
 }
 
 .hamburger {
-  align-self: center;
+  display: none;
 }
 
   /** BANNER **/ 
@@ -74,12 +74,14 @@ nav {
  /** TEA SECTION **/
  .tea-gallery {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
  }
 
  figure {
-  width: 100%;
+  object-fit: cover;
+ }
+ figure img {
+  display: block;
  }
  figcaption {
   text-align: center;
@@ -122,19 +124,14 @@ a {
   left: 0;
 }
 
-@media screen and (min-width: 769px) {
 
-}
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 350px) {
   /**NAV **/
-  .desktop {
-    display: none;
-  }
-
   .hamburger {
   background-color: transparent;
   border: none;
+  display: unset;
   height: 40px;
   margin: 0 0.3rem 0 auto;
   }
@@ -215,3 +212,20 @@ a {
     background-color: rgba(189, 184, 179, 0.815);
   }
 }
+@media screen and (min-width: 700px) {
+
+  .tea-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  figure {
+   width: 45%;
+  }
+ 
+  figure img {
+   width: 100%;
+  }
+ 
+ 
+ }
