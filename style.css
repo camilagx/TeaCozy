@@ -1,9 +1,13 @@
 /** TYPOGRAPHY **/
+* {
+  scroll-behavior: smooth;
+}
 html {
   background-color: black;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 body {
   margin: 0;
 }
@@ -41,26 +45,28 @@ p {
   text-align: center;
 }
 /**** NAV ****/
-.desktop-nav {
+nav {
+  width: 100%;
+  background-color: #171a1d;
   height: 70px;
   display: flex;
-  background-color: #171a1d;
-  align-items: flex-start;
 }
 
 .desktop-nav ul {
+  display: flex;
   height: 100%;
+  margin-top: 0;
 }
 
-#logo {
+.desktop-nav ul li a,
+#logo{
   display: block;
-  height: 50px
+  max-height: 60px;
 }
 
-
-  .hamburger {
-    display: hidden;
-  }
+.hamburger {
+  align-self: center;
+}
 
   /** BANNER **/ 
 
@@ -79,8 +85,13 @@ p {
  /** TEA SECTION **/
  .tea-gallery {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
  }
 
+ figure {
+  width: 100%;
+ }
  figcaption {
   text-align: center;
   padding: 0.5rem;
@@ -122,6 +133,10 @@ a {
   left: 0;
 }
 
+@media screen and (max-width: 769px) {
+
+}
+
 @media screen and (max-width: 480px) {
   /**NAV **/
   .desktop {
@@ -129,13 +144,10 @@ a {
   }
 
   .hamburger {
-  display:unset;
-  position: absolute;
-  top: 1.7%;
-  right: 2%;
   background-color: transparent;
   border: none;
   height: 40px;
+  margin: 0 0.3rem 0 auto;
   }
 
   .hamburger::before,
@@ -153,26 +165,26 @@ a {
   margin-top: 5px;
   }
 
-  .hamburger {
-    margin-top: 0;
-  }
-
   .mobile-nav {
   background-color: #171a1d;
-  padding: 2.5rem;
-  height: 100vh;
-  top: 10%;
+  height: calc(100vh - 70px);
+  width: 100vw;
   }
   .mobile-nav ul {
   margin: 0 auto;
   text-align: center;
   width: 65%;
+  padding: 4rem;
   }
 
   .mobile-nav li {
   background-color: rgba(53, 53, 53, 0.4);
   padding: 10px 0;
   margin: 10px;
+  }
+
+  .mobile-nav li:first-child {
+    margin-top: 0;
   }
 
   .mobile-nav li a {
@@ -209,8 +221,6 @@ a {
   figcaption {
     padding-top: 0.4rem;
   }
-
- 
 
   .location {
     background-color: rgba(189, 184, 179, 0.815);
