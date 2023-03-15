@@ -35,10 +35,17 @@ p {
 }
 /**** NAV ****/
 nav {
+  position: fixed;
   width: 100%;
   background-color: #171a1d;
   height: 70px;
   display: flex;
+  z-index: 1000;
+}
+
+.banner {
+  position: relative;
+  top: 70px;
 }
 
 .desktop-nav {
