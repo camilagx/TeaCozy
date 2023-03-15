@@ -74,15 +74,19 @@ nav {
   height: 100%;
 }
 
-  /** BANNER **/ 
+/** HEADER **/
+header,
+main{ 
+  position: relative;
+  top: 70px;
+}
 
+/** BANNER **/ 
 .banner {
   background-image: url("../media/img-mission-background.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  top: 70px;
 }
 
 .banner div {
@@ -211,11 +215,11 @@ a {
   }
   /** BANNER **/
   .banner {
-  height: 400px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 400px;
   }
 
   .banner div * {
@@ -267,6 +271,10 @@ a {
   .mobile-nav,
   .hamburger {
     display: none;
+  }
+  /** HEADER **/
+  .banner {
+    height: 700px;
   }
 
   /** TEA GALLERY **/
