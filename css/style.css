@@ -1,5 +1,5 @@
 /** TYPOGRAPHY **/
-* {
+html ,* {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -41,6 +41,12 @@ nav {
   display: flex;
 }
 
+.desktop-nav {
+  display: flex;
+  width: 100%;
+}
+
+
 .desktop-nav ul {
   display: flex;
   gap: 2rem;
@@ -62,7 +68,7 @@ nav {
 
 #logo{
   display: inline-block;
-  max-height: 60px;
+  max-height: 52px;
   height: 100%;
 }
 
@@ -148,12 +154,15 @@ a {
 
 @media screen and (min-width: 350px) {
   /**NAV **/
+  .desktop {
+    display: none;
+  }
+
   .hamburger {
   background-color: transparent;
   border: none;
   display: unset;
   height: 40px;
-  margin: 0 0.3rem 0 auto;
   }
 
   .hamburger::before,
@@ -174,7 +183,7 @@ a {
   .mobile-nav {
   background-color: #171a1d;
   height: calc(100vh - 70px);
-  width: 100vw;
+  width: 100%;
   }
   .mobile-nav ul {
   margin: 0 auto;
@@ -212,16 +221,15 @@ a {
   /** TEA SECTION **/
   .tea-gallery{
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   }
 
   figure {
-  box-sizing: border-box;
   margin: 0.4rem 0;
   }
 
   figure img {
-    width: 100vw;
+    width: 100%;
   }
 
   figcaption {
@@ -244,9 +252,15 @@ a {
 }
 @media screen and (min-width: 700px) {
   /** NAV **/
+  .desktop {
+    display: unset;
+  }
+
   .desktop a {
     color: white;
   }
+
+  .mobile-nav,
   .hamburger {
     display: none;
   }
